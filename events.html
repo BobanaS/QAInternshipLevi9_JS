@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+	<button onclick="alert('Hello from button');"class="btn btn-primary">Click here</button>
+	<button id='button2' class="btn btn-success">Click here</button>
+
+	<script>
+		document.getElementsById('button2').onclick=function(){
+			clickMeFunction()
+		};
+
+		function clickMeFunction(){
+			alert("Hello from second button!");
+		}
+	</script>
+</body>
+</html>

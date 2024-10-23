@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+   var cars=["Bmw","Mercedes","honda", "Datsun"]
+   //removes first item
+   cars.shift();
+   alert(cars);
+   //dodavanje pre prvog
+   cars.unshift("FORD");
+   alert(cars);
+   //dodavanje posle drugog i koliko zelimo da zamenimo elementa
+   cars.splice(2,0,"Dog","Cat");
+   alert(cars);
+   cars.splice(2,2,"Dog","Cat");
+   alert(cars);
+        var fancyCars=cars.slice(2,4);
+        alert(fancyCars);
+</script>
+</body>
+
+</html>

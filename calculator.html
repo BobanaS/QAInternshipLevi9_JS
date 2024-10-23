@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #calculator {
+            width: 300px;
+            margin: left;
+            padding: 20px;
+            border: 1px solid #dd399b;
+            border-radius: 5px;
+            text-align: center;
+        }
+        input[type="number"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        button {
+            width: 100px;
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 50px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="calculator">
+    <h2>Kalkulator</h2>
+    <input type="number" id="number1" placeholder="Prvi broj">
+    <input type="number" id="number2" placeholder="Drugi broj">
+    
+    <div>
+        <button onclick="izvrsiOperaciju('sabiranje')">Sabiranje</button>
+        <button onclick="izvrsiOperaciju('oduzimanje')">Oduzimanje</button>
+        <button onclick="izvrsiOperaciju('mnozenje')">Množenje</button>
+        <button onclick="izvrsiOperaciju('deljenje')">Deljenje</button>
+    </div>
+
+    <div id="result"></div>
+</div>
+
+<script src="calculator.js"></script>
+</body>
+</html>
