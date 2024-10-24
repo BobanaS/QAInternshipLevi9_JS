@@ -7,7 +7,7 @@ function oduzmi(number){
 if(number>=13){
     console.log(number-13);
 }else{
-    return console.log(Math.abs(number-13));
+    return console.log((Math.abs(number-13))*2);
 }
 }
 
